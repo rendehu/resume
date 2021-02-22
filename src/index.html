@@ -88,7 +88,7 @@
           <div class="item">
             <header class="item-hd">
               <h3 class="item-name">去哪儿网(杭州)</h3>
-              <span class="item-time">2017.7 至今</span>
+              <span class="item-time">2018.9 至今</span>
             </header>
             <div class="item-bd">
               <p class="item-des">负责去哪儿网相关项目的后端项目研发和管理</p>
@@ -99,6 +99,40 @@
               </ul>
             </div>
           </div>
+
+          <div class="content-left">
+            <div class="section-bd">
+              <!--经历:工作-->
+              <div class="item">
+                <header class="item-hd">
+                  <h3 class="item-name">安徽谷声科技有限公司</h3>
+                  <span class="item-time">2017.7 至 2018.9</span>
+                </header>
+                <div class="item-bd">
+                  <p class="item-des">负责公司项目的文档编写、开发、部署、运维</p>
+                  <ul class="section-content">
+                    <li>相关项目立项、开发、上线部署等</li>
+                    <li/>
+                  </ul>
+                </div>
+              </div>
+              <div class="item">
+                <header class="item-hd">
+                  <h3 class="item-name">科大讯飞(合肥)</h3>
+                  <span class="item-time">2017.04 至 2017.06</span>
+                </header>
+                <div class="item-bd">
+                  <p class="item-des">在互联网阅读项目组参与讯飞阅读的后端开发</p>
+                  <ul class="section-content">
+                    <li>参与讯飞阅读后台管理系统业务梳理及接口开发联调</li>
+                    <li>参与协助线上故障问题排查</li>
+                    <li/>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="item">
             <header class="item-hd">
               <h3 class="item-name">科大讯飞(合肥)</h3>
@@ -113,6 +147,7 @@
               </ul>
             </div>
           </div>
+
         </div>
       </div>
       <div class="content-right">
@@ -142,7 +177,7 @@
               <p class="item-des">在资源事业部参与综合资源系统接口开发，包括：
               </p>
               <ul class="section-content">
-                <li>综合资源系统前端页面(jq)开发</li>
+                <li>综合资源系统前端页面(Jquery)开发</li>
                 <li>综合资源2.0系统业务需求分析及接口开发</li>
                 <li>电信三码合一寻址搜索服务开发</li>
               </ul>
@@ -161,7 +196,7 @@
       </header>
       <div class="section-bd">
 
-        <!--项目:Webpack-->
+        <!--项目:去哪儿网商旅-->
         <div class="item">
           <header class="item-hd">
             <span class="item-time">去哪儿网商旅</span>
@@ -170,7 +205,7 @@
             <ul>
               <li>
                 <a class="item-hd">项目背景</a>
-                <p>Qunar C端新注册用户增长率昨年下降，在C端市场用户趋于饱和，参考携程商旅在范例，公司期望基于渠道的模式从B端开拓市场</p>
+                <p>Qunar C端新注册用户增长率逐年下降，在C端市场用户趋于饱和，参考携程商旅范例，公司期望基于渠道的轻资产模式从B端市场切入增加获客量和订单量</p>
               </li>
               <li>
                 <a class="item-hd">技 术 栈</a>
@@ -178,18 +213,18 @@
               </li>
               <li>
                 <a class="item-hd">技术选型</a>
-                <p>依托去哪儿网公共服务，针对不同的业务线进行分布式服务设计，服务之间采用Dubbo Rpc框架作为通信。通过JWT将用户token保存在客户端。列表分页查询接口数据量过大，但数据实时性要求不高，采用redis作为缓存服务</p>
+                <p>依托去哪儿网公共服务，针对不同的业务线进行分布式服务设计开发，采用Dubbo Rpc框架。通过JWT将用户token保存在客户端，减轻服务端压力。酒店列表查询接口数据量过大，但数据实时性要求不高，采用redis作为缓存服务</p>
 
               </li>
               <li>
                 <a class="item-hd">我的职责</a>
-                <p>负责项目落地，拆分任务给到项目成员，及时跟踪项目进度、对项目中无论是需求还是技术问题，组织大家互相讨论确认解决方案</p>
+                <p>负责项目落地，分派任务给小组成员，及时跟踪项目进度、对项目中可能存在的是需求/技术问题，组织会议讨论确认解决方案</p>
               </li>
             </ul>
           </div>
         </div>
 
-        <!--项目:Golang-->
+        <!--项目:去哪儿网广告营销平台-->
         <div class="item">
           <header class="item-hd">
             <span class="item-time">去哪儿网广告营销平台</span>
@@ -207,13 +242,14 @@
               </li>
               <li>
                 <a class="item-hd">技术选型</a>
-                <p>基于Double Click现有表结构梳理业务，尽可能使用现有表结构保证服务的无感知迁移，目前广告分发系统预估平均Qps在20000，峰值40000，高并发项目在资源有限的情况下Java项目不适合作为网关对外提供服务，网关的绝大多数流量是来自各业务线的广告物料查询接口，使用 OpenResty + Lua 可应对高并发服务，对于高并发服务，不适合直接从Db对物料进行查询和数据写入。对于查询，可基于定时调度每天将广告物料提前缓存到Redis中，配置数据可生成本地文件同步到ROpenesty 服务器上，基于内存加载，提高响应速度。</p>
+                <p>基于Double Click现有表结构梳理业务，尽可能使用现有表结构，同时保留现有业务线与平台接入的接口，确保服务无感知迁移。</p>
+                <p>广告分发系统预估平均Qps在20000，峰值40000，高并发项目在资源有限的情况下Java项目不适合作为网关对外提供服务，网关的绝大多数流量是来自各业务线的广告物料查询接口，使用 OpenResty + Lua 可应对高并发服务，对于高并发服务，不适合直接从Db对物料进行查询和数据写入。通过定时任务每天将广告物料提前缓存到Redis或生成本地文件同步到 OpenResty 服务器上以提高RT响应。</p>
                 <p>公司的Redis 集群服务没有Lua 语言开发的客户端，为了保证Redis服务高可用，采用自建Redis 服务，基于Redis Sentinel +主从方案实现 缓存中间件</p>
               </li>
               <li>
                 <a class="item-hd">我的职责</a>
-                <p>负责与大数据部门对接，实时调用用户行为和用户画像接口，确定是否符合广告物料分发的条件</p>
-                <p>负责与大数据部门对接，基于Hadoop Map Reduce Job 离线查询符合期望用户行为和用户画像的用户量，辅助支撑运营和销售人员针对广告主定时广告投放计划</p>
+                <p>与大数据部门对接，实时调用用户行为和用户画像接口，确定是否符合广告物料分发的条件</p>
+                <p>与大数据部门对接，基于Hadoop Map-Reduce Job 离线查询符合期望用户行为和用户画像的用户量，辅助支撑运营和销售人员针对广告主定时广告投放计划</p>
                 <p>报表开发</p>
                 <p>后期作为TL承接广告营销平台相关需求，对任务进行拆分，安排排期，对需求进度跟踪确保按计划完成上线</p>
               </li>
@@ -250,7 +286,7 @@
             </header>
             <div class="item-bd">
               <ul class="section-content">
-                <li>对Java集合框架、多线程熟练掌握</li>
+                <li>对Java IO、集合、多线程 等 熟练掌握</li>
               </ul>
             </div>
           </div>
@@ -260,8 +296,9 @@
             </header>
             <div class="item-bd">
               <ul class="section-content">
-                <li>了解Jvm内存结果</li>
-                <li>了解Jvm类加载机制</li>
+                <li>了解 Jvm 内存模型结构</li>
+                <li>了解 Jvm 类加载机制</li>
+                <li>了解 Jvm 垃圾回收机制</li>
               </ul>
             </div>
           </div>
